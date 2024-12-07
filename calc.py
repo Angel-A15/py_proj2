@@ -4,21 +4,13 @@ def get_number():
     while True:
         operand = input("Number 1: ")
         try:
-            operand = float(operand)
-            break
+            return  float(operand)
         except:
             print("Invaled number, try again.")
+            
 
-    while True:
-        operand2 = input("Number2: ")
-        try:
-            operand2 = float(operand2)
-            break
-        except:
-            print("Invalid number, try again.")
-
-
-
+operand = get_number()
+operand2 = get_number()
 
 sign = input("Sign: ")
 
